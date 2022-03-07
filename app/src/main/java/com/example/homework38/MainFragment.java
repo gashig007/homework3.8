@@ -48,6 +48,5 @@ private ArrayList <FirstModel> data;
     @Override
     public void OnClick(FirstModel firstModel) {
        NavHostFragment.findNavController(MainFragment.this).navigate(MainFragmentDirections.actionNavigationCharacterToNavigationCharacter1(firstModel));
-
     }
 }

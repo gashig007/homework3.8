@@ -1,6 +1,8 @@
 package com.example.homework38;
 
-public class FirstModel {
+import java.io.Serializable;
+
+public class FirstModel implements Serializable {
     private Integer image;
     private String text;
     private String name;
