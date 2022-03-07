@@ -25,8 +25,10 @@ private FragmentFirst2Binding binding;
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        FirstModel firstModel = MainFragment2Args.fromBundle(getArguments()).getText();
-        binding.text.setText(firstModel.getName());
+        FirstModel firstModel = MainFragment2Args.fromBundle(getArguments()).getTv1();
+        binding.image1.setImageResource(firstModel.getImage());
+        binding.text1.setText(firstModel.getName());
+        binding.text2.setText(firstModel.getText());
 
 
     }
